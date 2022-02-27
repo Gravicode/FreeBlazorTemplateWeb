@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+<PageTitle>SBUIKitBlazor</PageTitle>
+
+<div id="layoutDefault">
+    <div id="layoutDefault_content">
+        <main>
+            <!-- Navbar-->
+            <NavMenu></NavMenu>
+            @Body
+        </main>
+    </div>
+    <div id="layoutDefault_footer">
+        <Footer></Footer>
+    </div>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}
