@@ -14,11 +14,4 @@
     <None Include="wwwroot\css\open-iconic\README.md" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Landing\" />
-    <Folder Include="Pages\Error\" />
-    <Folder Include="Pages\Header\" />
-    <Folder Include="Pages\InnerPage\" />
-  </ItemGroup>
-
 </Project>

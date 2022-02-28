@@ -1,0 +1,45 @@
+﻿@page "/header/header-nav-only"
+@inject IJSRuntime JS
+@layout MainLayoutDark
+
+<PageTitle>Header Nav Only</PageTitle>
+ 
+<section class="bg-light py-10">
+                        <div class="container px-5">
+                            <h1 class="mb-4">This is an example of a page without a header</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eos quisquam expedita quo officiis porro provident laborum. Earum, consequatur provident, ipsam at excepturi rerum laborum aliquam facere molestias mollitia recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam? Perspiciatis sunt voluptatum officia non harum, dolores omnis fugiat nam ad optio cumque molestiae impedit dignissimos velit commodi aliquid iure?</p>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sapiente natus architecto aut porro! Vitae iusto praesentium recusandae debitis, cumque illum amet suscipit rem pariatur, magni iure laborum inventore in!</p>
+                            <hr class="my-5" />
+                            <h4 class="mb-4">
+                                <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                                Use this page to create additional inner pages
+                            </h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eos quisquam expedita quo officiis porro provident laborum. Earum, consequatur provident, ipsam at excepturi rerum laborum aliquam facere molestias mollitia recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam? Perspiciatis sunt voluptatum officia non harum, dolores omnis fugiat nam ad optio cumque molestiae impedit dignissimos velit commodi aliquid iure?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sapiente natus architecto aut porro! Vitae iusto praesentium recusandae debitis, cumque illum amet suscipit rem pariatur, magni iure laborum inventore in!</p>
+                            <div class="card bg-light shadow-none">
+                                <div class="card-body">
+                                    <h6>Some basic bullet points to show you some list items</h6>
+                                    <ul class="mb-0">
+                                        <li class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta fugiat eveniet, dignissimos facere quisquam, odit suscipit aliquid magnam?</li>
+                                        <li class="font-italic">Iste, mollitia, beatae impedit soluta fugiat illo consectetur earum tempore veniam pariatur delectus?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+@code {
+     protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}

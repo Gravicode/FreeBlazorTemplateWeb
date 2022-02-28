@@ -1,0 +1,143 @@
+﻿@page "/help/help-center"
+@inject IJSRuntime JS
+@layout MainLayoutDark
+
+<PageTitle>Page Help Center</PageTitle> 
+<!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                        <div class="page-header-ui-content pt-10">
+                            <div class="container px-5 text-center">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-ui-title mb-3">Help Center</h1>
+                                        <p class="page-header-ui-text">We're here to help. Browse our knowledgebase or contact us directly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </header>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 features text-center mb-10">
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-primary h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-primary-soft text-primary mb-4"><i data-feather="user"></i></div>
+                                            <h6>Account</h6>
+                                            <p class="card-text">Issues related to logging in, out, or about multiple devices.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">21 Entries</div></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-green h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-green-soft text-green mb-4"><i data-feather="clock"></i></div>
+                                            <h6>Integrations</h6>
+                                            <p class="card-text">Connecting with 3rd party apps to exchange data.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">9 Entries</div></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-yellow h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-yellow-soft text-yellow mb-4"><i data-feather="clock"></i></div>
+                                            <h6>Billing</h6>
+                                            <p class="card-text">Issues with payments or invoicing.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">14 Entries</div></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-purple h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-purple-soft text-purple mb-4"><i data-feather="clock"></i></div>
+                                            <h6>Organizations</h6>
+                                            <p class="card-text">Setting up and managing collections of users.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">17 Entries</div></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-red h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><i data-feather="clock"></i></div>
+                                            <h6>Performance</h6>
+                                            <p class="card-text">Improving your system's speed and reliability.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">7 Entries</div></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-teal h-100 lift" href="#!">
+                                        <div class="card-body p-5">
+                                            <div class="icon-stack icon-stack-lg bg-teal-soft text-teal mb-4"><i data-feather="clock"></i></div>
+                                            <h6>Customizing</h6>
+                                            <p class="card-text">Building custom modules on top of our platform.</p>
+                                        </div>
+                                        <div class="card-footer border-0 bg-transparent pt-0 pb-5"><div class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">14 Entries</div></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <h2>Can't find the answer you need?</h2>
+                                    <p class="lead mb-5">Contact us and we'll get back to you as soon as possible with a solution to whatever issues you're having with SB UI Kit Pro.</p>
+                                </div>
+                            </div>
+                            <div class="row gx-5 align-items-center mb-10">
+                                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                                    <div class="section-preheading">Message Us</div>
+                                    <a href="#!">Start a chat!</a>
+                                </div>
+                                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                                    <div class="section-preheading">Call Anytime</div>
+                                    <a href="#!">(555) 565-1846</a>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="section-preheading">Email Us</div>
+                                    <a href="#!">support@startbootstrap.com</a>
+                                </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-8">
+                                    <form>
+                                        <div class="row gx-5 mb-4">
+                                            <div class="col-md-6">
+                                                <label class="text-dark mb-2" for="inputName">Full name</label>
+                                                <input class="form-control py-4" id="inputName" type="text" placeholder="Full name" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="text-dark mb-2" for="inputEmail">Email</label>
+                                                <input class="form-control py-4" id="inputEmail" type="email" placeholder="name@example.com" />
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="text-dark mb-2" for="inputMessage">Message</label>
+                                            <textarea class="form-control py-3" id="inputMessage" type="text" placeholder="Enter your message..." rows="4"></textarea>
+                                        </div>
+                                        <div class="text-center"><button class="btn btn-primary mt-4" type="submit">Submit Request</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}

@@ -1,0 +1,70 @@
+﻿@page "/header/header-graphic-signup"
+@inject IJSRuntime JS
+@layout MainLayoutDark
+
+<PageTitle>Header Graphic Sign Up</PageTitle>
+
+<!-- Page Header-->
+                    <header class="page-header-ui page-header-light py-lg-5 bg-white">
+                        <div class="page-header-ui-content">
+                            <div class="container px-5">
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-7">
+                                        <h1 class="page-header-ui-title">Build your next project faster</h1>
+                                        <p class="page-header-ui-text mb-5">Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces, created by the development team at Start Bootstrap</p>
+                                        <form class="row row-cols-1 row-cols-md-auto g-3 align-items-center mb-3">
+                                            <div class="col flex-grow-1">
+                                                <label class="sr-only" for="inputEmail">Enter your email...</label>
+                                                <input class="form-control form-control-solid w-100" id="inputEmail" type="email" placeholder="Enter your email..." />
+                                            </div>
+                                            <div class="col"><button class="btn btn-primary fw-500" type="submit">Sign Up</button></div>
+                                        </form>
+                                        <p class="page-header-ui-text small mb-0">
+                                            By signing up, you agree to our
+                                            <a href="#!">terms of service</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 d-none d-lg-block"><img class="img-fluid ps-xl-5" src="assets/img/illustrations/creativity.svg" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </header>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 text-center">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-primary text-white mb-4"><i data-feather="layers"></i></div>
+                                    <h3>Built for developers</h3>
+                                    <p class="mb-0">Our modular, block-based build system makes building your next project fast and easy!</p>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-primary text-white mb-4"><i data-feather="smartphone"></i></div>
+                                    <h3>Modern responsive design</h3>
+                                    <p class="mb-0">This UI Kit is build mobile-first, meaning it is will function beautifully on any device!</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-primary text-white mb-4"><i data-feather="code"></i></div>
+                                    <h3>Complete documentation</h3>
+                                    <p class="mb-0">All of the layouts, page sections, components, and utilities are fully covered in this products docs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+@code {
+     protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}

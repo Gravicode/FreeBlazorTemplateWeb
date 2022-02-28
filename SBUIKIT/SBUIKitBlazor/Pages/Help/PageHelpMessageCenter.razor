@@ -1,0 +1,177 @@
+﻿@page "/help/help-message-center"
+@inject IJSRuntime JS
+@layout MainLayoutDark
+
+<PageTitle>Page Help Message Center</PageTitle> 
+  <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                        <div class="page-header-ui-content pt-10">
+                            <div class="container px-5 text-center">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-ui-title mb-3">Message Center</h1>
+                                        <p class="page-header-ui-text">Open tickets and receive responses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </header>
+                    <section class="bg-light pt-10">
+                        <div class="container px-5">
+                            <div class="input-group input-group-lg mb-5">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Case ID</button>
+                                <div class="dropdown-menu animated--fade-in-up">
+                                    <a class="dropdown-item" href="#!">Transaction ID</a>
+                                    <a class="dropdown-item" href="#!">Invoice ID</a>
+                                    <a class="dropdown-item" href="#!">Name</a>
+                                    <a class="dropdown-item" href="#!">Email</a>
+                                </div>
+                                <input class="form-control" type="text" aria-label="Text input with dropdown button" placeholder="Search for a case..." />
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 col-xl-3 mb-5">
+                                    <div class="card">
+                                        <div class="list-group list-group-flush small">
+                                            <a class="list-group-item list-group-item-action p-3" href="#!">
+                                                <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                                Make New Ticket
+                                            </a>
+                                            <a class="list-group-item list-group-item-action p-3" href="#!">
+                                                <i class="fas fa-file-alt fa-fw me-2 text-gray-400"></i>
+                                                View Open Tickets
+                                            </a>
+                                            <a class="list-group-item list-group-item-action p-3" href="#!">
+                                                <i class="fas fa-archive fa-fw me-2 text-gray-400"></i>
+                                                View Closed Tickets
+                                            </a>
+                                            <a class="list-group-item list-group-item-action p-3" href="#!">
+                                                <i class="fas fa-star fa-fw me-2 text-gray-400"></i>
+                                                View Starred Tickets
+                                            </a>
+                                            <a class="list-group-item list-group-item-action p-3" href="#!">
+                                                <i class="far fa-handshake fa-fw me-2 text-gray-400"></i>
+                                                Managed Services
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <div class="card mb-3">
+                                        <div class="list-group list-group-flush">
+                                            <a class="list-group-item list-group-item-action py-4" href="#!">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="me-4 d-flex">
+                                                        <div class="icon-stack icon-stack bg-green-soft text-green flex-shrink-0 me-4"><i data-feather="check"></i></div>
+                                                        <div>
+                                                            <h6>Case #290225</h6>
+                                                            <p class="card-text">Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small text-gray-400 flex-shrink-0 text-end">
+                                                        12:13 PM
+                                                        <br />
+                                                        <div class="badge bg-green-soft rounded-pill text-green">Approved</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action py-4" href="#!">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="me-4 d-flex">
+                                                        <div class="icon-stack icon-stack bg-red-soft text-red flex-shrink-0 me-4"><i data-feather="x"></i></div>
+                                                        <div>
+                                                            <h6>Case #290234</h6>
+                                                            <p class="card-text">Your request has been declined. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small text-gray-400 flex-shrink-0 text-end">
+                                                        10:26 PM
+                                                        <br />
+                                                        <div class="badge bg-red-soft rounded-pill text-red">Declined</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action py-4" href="#!">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="me-4 d-flex">
+                                                        <div class="icon-stack icon-stack bg-green-soft text-green flex-shrink-0 me-4"><i data-feather="check"></i></div>
+                                                        <div>
+                                                            <h6>Case #290194</h6>
+                                                            <p class="card-text">Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small text-gray-400 flex-shrink-0 text-end">
+                                                        Monday
+                                                        <br />
+                                                        <div class="badge bg-green-soft rounded-pill text-green">Approved</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action py-4" href="#!">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="me-4 d-flex">
+                                                        <div class="icon-stack icon-stack bg-yellow-soft text-yellow flex-shrink-0 me-4"><i data-feather="file-text"></i></div>
+                                                        <div>
+                                                            <h6>Case #290127</h6>
+                                                            <p class="card-text">Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small text-gray-400 flex-shrink-0 text-end">
+                                                        2 weeks ago
+                                                        <br />
+                                                        <div class="badge bg-yellow-soft rounded-pill text-yellow">Pending</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action py-4" href="#!">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="me-4 d-flex">
+                                                        <div class="icon-stack icon-stack bg-yellow-soft text-yellow flex-shrink-0 me-4"><i data-feather="file-text"></i></div>
+                                                        <div>
+                                                            <h6>Case #290078</h6>
+                                                            <p class="card-text">Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small text-gray-400 flex-shrink-0 text-end">
+                                                        2 weeks ago
+                                                        <br />
+                                                        <div class="badge bg-yellow-soft rounded-pill text-yellow">Pending</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action py-4" href="#!"><div class="text-center small">View Archived Cases</div></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-end mb-5">
+                                        <a class="btn btn btn-primary-soft text-primary fw-500" href="#!">
+                                            <i class="fas fa-file-pdf me-1"></i>
+                                            Download case report
+                                        </a>
+                                    </div>
+                                    <div class="card z-1">
+                                        <div class="card-body text-center py-5">
+                                            <h2 class="mb-3">We're here to help</h2>
+                                            <a class="btn btn-primary fw-500" href="#!">Open a New Ticket</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}

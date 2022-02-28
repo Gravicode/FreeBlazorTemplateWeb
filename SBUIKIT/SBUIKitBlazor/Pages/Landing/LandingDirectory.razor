@@ -1,0 +1,208 @@
+﻿@page "/landing/landing-directory"
+@inject IJSRuntime JS
+@layout MainLayoutDark
+
+<PageTitle>Landing Directory</PageTitle>
+
+ <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('https://source.unsplash.com/hrlvr2ZlUNk/1500x700')">
+                        <div class="page-header-ui-content position-relative">
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-8 col-lg-10 text-center">
+                                        <h1 class="page-header-ui-title">Find the best businesses in town</h1>
+                                        <p class="page-header-ui-text mb-5">Search for restaurants, contractors, and other local businesses in your area to find out which ones are the best!</p>
+                                    </div>
+                                </div>
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-6 col-lg-8 text-center">
+                                        <form class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                            <div class="col flex-grow-1">
+                                                <label class="sr-only" for="inputEmail">Find local businesses...</label>
+                                                <input class="form-control form-control-solid" id="inputEmail" type="text" placeholder="Find local businesses..." />
+                                            </div>
+                                            <div class="col"><button class="btn btn-teal fw-500" type="submit">Search</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-angled text-light">
+                            <!-- Angled SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        </div>
+                    </header>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="mb-5 text-center">
+                                        <div class="text-xs text-uppercase-expanded text-primary mb-2">Browse Businesses</div>
+                                        <p class="lead mb-0">Not sure what to search for? Browse some of the most popular categories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/Yr4n8O_3UPc/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Restaurants</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/YbGMa1Jz1yY/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Dry Cleaning</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/Cl-OpYWFFm0/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Painters</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/E285pJbC4uE/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Medical</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/CQfNt66ttZM/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Gyms</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/tNALoIZhqVM/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Coffee</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/r3XvSBEQQLo/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Events</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/WCm4dFvZnMM/800x500" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">Breweries</h6></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-angled text-white">
+                            <!-- Angled SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        </div>
+                    </section>
+                    <section class="bg-white pt-5 pb-10">
+                        <div class="container px-5">
+                            <div class="card mt-n15 mb-10 z-1">
+                                <div class="card-body p-5">
+                                    <div class="row gx-5 align-items-center">
+                                        <div class="col-lg-6">
+                                            <h4>Get the latest news</h4>
+                                            <p class="lead text-gray-500 mb-0">Stay in the loop with the latest updates and features added to our application!</p>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group mb-2">
+                                                <input class="form-control form-control-solid" type="text" placeholder="youremail@example.com" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                                <button class="btn btn-primary" id="button-addon2" type="button">Sign up</button>
+                                            </div>
+                                            <div class="small text-gray-500">You can unsubscribe at any time.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="mb-5 text-center">
+                                        <div class="text-xs text-uppercase-expanded text-primary mb-2">New Businesses</div>
+                                        <p class="lead mb-0">Here are some of the most popular new businesses in your area.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/E6HjQaB7UEA/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">The Bamboo Ranch</h6>
+                                            <div class="text-yellow">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <div class="small mb-2">(12 Reviews)</div>
+                                            <div class="small">Upper West Ceon, Gram</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 2 weeks ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Lakeside Oyster</h6>
+                                            <div class="text-yellow">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <div class="small mb-2">(8 Reviews)</div>
+                                            <div class="small">East Fom, Kugan</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 1 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/sWEpcc0Rm0U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Wild Junction</h6>
+                                            <div class="text-yellow">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="small mb-2">(29 Reviews)</div>
+                                            <div class="small">Shotles Wood, Drada</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 2 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-angled text-dark">
+                            <!-- Angled SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        </div>
+                    </section>
+@code {
+       protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            await JS.InvokeVoidAsync("LoadFeather");
+        }
+    }
+}
